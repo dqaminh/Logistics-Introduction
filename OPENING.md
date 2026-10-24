@@ -1,5 +1,13 @@
 # Open your pink website on Windows
 
+## Open the live website on a phone or computer
+
+https://dqaminh.github.io/Logistics-Introduction/
+
+Send this link through Messenger. No download or GitHub account is needed.
+
+## Open the files on your computer
+
 1. Open this project folder in File Explorer.
 2. Double-click `index.html`.
 3. If Windows asks which app to use, choose Microsoft Edge, Google Chrome, or Firefox.
@@ -33,6 +41,6 @@ On the repository page, select **Code > Download ZIP**. Right-click the ZIP,
 choose **Extract All**, then open `index.html` in the extracted folder.
 To share the files, send the entire ZIP so the picture and second page are included.
 
-Uploading to GitHub stores the project; it does not automatically create a public
-website link. A phone can view it through static website hosting, such as GitHub
-Pages, when you decide to share a public link.
+GitHub Pages publishes this repository's `main` branch. After you save your edits,
+commit and push them to GitHub to update the live website. Publishing can take a
+few minutes; the website address stays the same.
