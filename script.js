@@ -69,29 +69,3 @@ if (runaway && playground && nextPage && hint) {
   window.addEventListener("resize", resetPosition);
   if ("ResizeObserver" in window) new ResizeObserver(resetPosition).observe(playground);
 }
-
-const hugButton = document.querySelector("#hug-button");
-const hugMessage = document.querySelector("#hug-message");
-
-if (hugButton && hugMessage) {
-  hugButton.addEventListener("click", () => {
-    hugMessage.textContent = "Một cái ôm thật lâu dành cho em. Thương em ♡";
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    // Keep repeated clicks from accumulating an unlimited number of hearts.
-    document.querySelectorAll(".heart-particle").forEach(heart => heart.remove());
-    for (let i = 0; i < 18; i++) {
-      const heart = document.createElement("span");
-      heart.className = "heart-particle";
-      heart.textContent = i % 3 === 0 ? "♡" : "♥";
-      heart.setAttribute("aria-hidden", "true");
-      heart.style.setProperty("--x", `${Math.random() * 100}%`);
-      heart.style.setProperty("--size", `${16 + Math.random() * 20}px`);
-      heart.style.setProperty("--color", ["#db7398", "#e6a7bd", "#ca4a78"][i % 3]);
-      heart.style.setProperty("--drift", `${Math.random() * 140 - 70}px`);
-      heart.style.setProperty("--turn", `${Math.random() * 80 - 40}deg`);
-      heart.style.animationDelay = `${Math.random() * .35}s`;
-      heart.addEventListener("animationend", () => heart.remove(), { once: true });
-      document.body.append(heart);
-    }
-  });
-}

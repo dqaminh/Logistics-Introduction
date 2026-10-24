@@ -19,7 +19,7 @@ Keep the files and the `assets` folder together.
 
 - **Em không giận anh** runs away when approached with a mouse, clicked, or tapped on a phone. You can also select it with Tab and press Enter or Space.
 - **Em giận anh đó** opens `page2.html`.
-- The second page has a little apology, a hug animation, and a link back.
+- The second page shows the crying cats, an apology question, and the **là gì ?** button.
 
 ## Make it yours
 
@@ -29,8 +29,9 @@ Refresh your browser after saving.
 - `index.html`: the first question and button text.
 - `page2.html`: the second page's message.
 - `styles.css`: the white and pink colors, rounded buttons, and layout.
-- `script.js`: the runaway button and hug animation.
-- `assets/love-cats.png`: the cat illustration.
+- `script.js`: the runaway button.
+- `assets/love-cats.png`: the first page's cat illustration.
+- `assets/sad-cats.png`: the second page's crying cat illustration.
 
 The original README is preserved. The previous logistics website is saved in
 `archive/logistics.html` and can still be opened by double-clicking it.

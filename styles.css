@@ -101,12 +101,9 @@ h1 { margin: 0; color: #69364a; font: 500 clamp(34px, 4.8vw, 47px)/1.23 Georgia,
 .page-footer { padding: 17px 20px 23px; text-align: center; color: #b18898; font-size: 10px; letter-spacing: .4px; }
 .page-footer span { color: #d4819f; font-size: 14px; margin-left: 4px; }
 .love-note { font-size: 14px; color: var(--muted); line-height: 1.9; margin: 17px 0 25px; }
-.second-actions { padding: 0 0 7px; }
-.hug-message { min-height: 38px; margin: 16px 0 4px; color: #ad5070; font-size: 12px; line-height: 1.7; }
-.back-link { display: inline-flex; gap: 8px; padding: 9px; text-decoration: none; color: #a17b89; font-size: 11px; }
-.back-link:hover { text-decoration: underline; }
-.heart-particle { position: fixed; left: var(--x); top: 104%; z-index: 5; color: var(--color); font-size: var(--size); pointer-events: none; animation: float-up 2.8s ease-out forwards; }
-@keyframes float-up { to { transform: translate(var(--drift), -115vh) rotate(var(--turn)); opacity: 0; } }
+.second-letter h1 { font-size: clamp(28px, 4vw, 36px); line-height: 1.4; letter-spacing: -.8px; text-wrap: balance; }
+.second-actions { padding: 30px 0 12px; }
+.second-actions .button { min-width: 150px; }
 :focus-visible { outline: 3px solid #a9466b; outline-offset: 5px; }
 
 @media (min-width: 800px) and (min-height: 900px) {
