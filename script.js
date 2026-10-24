@@ -1,12 +1,8 @@
 "use strict";
 
-// The shy button stays inside its playground, above the link to page 2.
-const runaway = document.querySelector("#runaway-button");
-const playground = document.querySelector("#playground");
-const nextPage = document.querySelector("#next-page");
-const hint = document.querySelector("#runaway-hint");
-
-if (runaway && playground && nextPage && hint) {
+// Each shy button stays inside its playground, above its fixed action.
+function setupRunaway(runaway, playground, nextPage, hint, messages) {
+  if (!runaway || !playground || !nextPage || !hint) return;
   let lastMove = -Infinity;
   let escapes = 0;
 
@@ -44,13 +40,9 @@ if (runaway && playground && nextPage && hint) {
     runaway.style.top = `${destination.y}px`;
     lastMove = performance.now();
     escapes++;
-    const messages = [
-      "Ơ kìa… nút này biết chạy nè! ☺",
-      "Bắt được anh rồi hãy bấm nha ♡",
-      "Hình như nút này cũng đang ngại em đó…",
-      "Thôi mà, chọn nút hồng thử đi em ♡"
-    ];
-    hint.textContent = messages[Math.min(escapes - 1, messages.length - 1)];
+    hint.textContent = messages
+      ? messages[Math.min(escapes - 1, messages.length - 1)]
+      : `Nút đã di chuyển ${escapes} lần.`;
   }
 
   runaway.addEventListener("pointerenter", event => {
@@ -68,4 +60,34 @@ if (runaway && playground && nextPage && hint) {
   // Reset after resizing/phone rotation so the button cannot end up offscreen.
   window.addEventListener("resize", resetPosition);
   if ("ResizeObserver" in window) new ResizeObserver(resetPosition).observe(playground);
+}
+
+setupRunaway(
+  document.querySelector("#runaway-button"),
+  document.querySelector("#playground"),
+  document.querySelector("#next-page"),
+  document.querySelector("#runaway-hint"),
+  [
+    "Ơ kìa… nút này biết chạy nè! ☺",
+    "Bắt được anh rồi hãy bấm nha ♡",
+    "Hình như nút này cũng đang ngại em đó…",
+    "Thôi mà, chọn nút hồng thử đi em ♡"
+  ]
+);
+
+setupRunaway(
+  document.querySelector("#invitation-runaway"),
+  document.querySelector("#invitation-playground"),
+  document.querySelector("#accept-invitation"),
+  document.querySelector("#invitation-status")
+);
+
+const continueButton = document.querySelector("#continue-button");
+if (continueButton) {
+  continueButton.addEventListener("click", () => {
+    document.querySelector("#apology-step").hidden = true;
+    document.querySelector("#invitation-step").hidden = false;
+    document.querySelector(".second-letter").setAttribute("aria-labelledby", "invitation-title");
+    document.querySelector("#invitation-title").focus({ preventScroll: true });
+  });
 }

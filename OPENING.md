@@ -19,7 +19,10 @@ Keep the files and the `assets` folder together.
 
 - **Em không giận anh** runs away when approached with a mouse, clicked, or tapped on a phone. You can also select it with Tab and press Enter or Space.
 - **Em giận anh đó** opens `page2.html`.
-- The second page shows the crying cats, an apology question, and the **là gì ?** button.
+- **là gì ?** reveals the Turku invitation on page two, with the updated cat picture.
+- **Không, absolute not** runs away like the first page's shy button.
+- **Đi cũng được** opens `page3.html` with the screenshot confirmation message and cuddling cats.
+- **OK, shop nhớ** returns to the first page.
 
 ## Make it yours
 
@@ -28,10 +31,13 @@ Refresh your browser after saving.
 
 - `index.html`: the first question and button text.
 - `page2.html`: the second page's message.
+- `page3.html`: the confirmation after accepting the invitation.
 - `styles.css`: the white and pink colors, rounded buttons, and layout.
 - `script.js`: the runaway button.
 - `assets/love-cats.png`: the first page's cat illustration.
 - `assets/sad-cats.png`: the second page's crying cat illustration.
+- `assets/invitation-cats.png`: the smiling white cat and curious pink cat.
+- `assets/happy-cats.png`: the happy, cuddling cats on page three.
 
 The original README is preserved. The previous logistics website is saved in
 `archive/logistics.html` and can still be opened by double-clicking it.

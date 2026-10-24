@@ -22,6 +22,7 @@ button, a { touch-action: manipulation; }
 button { font: inherit; }
 a { color: inherit; }
 [hidden] { display: none !important; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .page-shell { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
 .masthead {
   width: min(1060px, calc(100% - 72px));
@@ -102,8 +103,11 @@ h1 { margin: 0; color: #69364a; font: 500 clamp(34px, 4.8vw, 47px)/1.23 Georgia,
 .page-footer span { color: #d4819f; font-size: 14px; margin-left: 4px; }
 .love-note { font-size: 14px; color: var(--muted); line-height: 1.9; margin: 17px 0 25px; }
 .second-letter h1 { font-size: clamp(28px, 4vw, 36px); line-height: 1.4; letter-spacing: -.8px; text-wrap: balance; }
+.third-letter h1 { font-size: clamp(22px, 3vw, 28px); line-height: 1.5; letter-spacing: -.35px; text-wrap: pretty; }
 .second-actions { padding: 30px 0 12px; }
 .second-actions .button { min-width: 150px; }
+#invitation-step:not([hidden]) .button { animation: button-pop 220ms ease-out both; }
+@keyframes button-pop { from { opacity: 0; translate: 0 6px; } to { opacity: 1; translate: 0 0; } }
 :focus-visible { outline: 3px solid #a9466b; outline-offset: 5px; }
 
 @media (min-width: 800px) and (min-height: 900px) {

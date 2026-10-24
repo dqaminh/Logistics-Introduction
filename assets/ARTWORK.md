@@ -1,5 +1,16 @@
 # Cat illustration
 
+## Scene files and edit prompts
+
+- `love-cats.png`: the original illustration, with its generation prompt below.
+- `sad-cats.png`: [crying-cat edit prompt](SAD-CATS-ARTWORK.md).
+- `invitation-cats.png`: [curious-cat edit prompt](INVITATION-CATS-ARTWORK.md).
+- `happy-cats.png`: [cuddling-cat edit prompt](HAPPY-CATS-ARTWORK.md).
+
+All illustrations were generated or edited with the built-in Imagegen tool.
+
+## Original illustration
+
 File: `love-cats.png`
 
 Created with the built-in Imagegen tool for this website.

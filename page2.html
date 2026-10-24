@@ -7,8 +7,8 @@
   <meta name="description" content="thôi đừng giận mà....anh xin lỗi, hay là...">
   <title>thôi đừng giận mà....anh xin lỗi, hay là...</title>
   <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="script.js?v=3" defer></script>
 </head>
 <body>
   <div class="page-shell">
@@ -24,13 +24,26 @@
         <span class="doodle doodle-heart" aria-hidden="true">♡</span>
         <span class="doodle doodle-sparkle" aria-hidden="true">✧</span>
         <article class="letter second-letter" aria-labelledby="second-title">
-          <div class="illustration">
-            <img src="assets/sad-cats.png" alt="Mèo hồng đang khóc, còn mèo trắng bối rối và buồn." width="1536" height="1024" fetchpriority="high">
-          </div>
-          <h1 id="second-title">thôi đừng giận mà....anh xin lỗi, hay là...</h1>
-          <div class="second-actions">
-            <button class="button button-pink" id="continue-button" type="button">là gì ?</button>
-          </div>
+          <section id="apology-step" aria-labelledby="second-title">
+            <div class="illustration">
+              <img src="assets/sad-cats.png" alt="Mèo hồng đang khóc, còn mèo trắng bối rối và buồn." width="1536" height="1024" fetchpriority="high">
+            </div>
+            <h1 id="second-title">thôi đừng giận mà....anh xin lỗi, hay là...</h1>
+            <div class="second-actions">
+              <button class="button button-pink" id="continue-button" type="button">là gì ?</button>
+            </div>
+          </section>
+          <section id="invitation-step" aria-labelledby="invitation-title" hidden>
+            <div class="illustration">
+              <img src="assets/invitation-cats.png" alt="Mèo hồng bối rối và tò mò, còn mèo trắng đang mỉm cười." width="1536" height="1024">
+            </div>
+            <h1 id="invitation-title" tabindex="-1">Turku, có gì cuối tuần rảnh anh chở em đi</h1>
+            <div class="button-playground" id="invitation-playground">
+              <button class="button button-shy" id="invitation-runaway" type="button" aria-describedby="invitation-status">Không, absolute not</button>
+              <a class="button button-pink" id="accept-invitation" href="page3.html">Đi cũng được</a>
+            </div>
+            <p class="visually-hidden" id="invitation-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          </section>
         </article>
       </div>
     </main>
