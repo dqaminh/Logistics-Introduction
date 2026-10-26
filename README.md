@@ -1,9 +1,11 @@
 # Logistics Introduction
 
-This folder is dedicated to the logistics team's website.
+A responsive, presentation-ready draft for introducing the logistics team. Open index.html directly in a browser, or use the hosted Site recorded in .openai/hosting.json. dist/index.html is the deployment copy; copy index.html there after future source edits.
 
-Open index.html in a browser to view the team introduction. The page includes sample roles and responsibilities; team names, photos, and contact details still need to be added.
+Use **Edit introduction** to change the headline and introductory paragraph. Save keeps changes in this browser only. Download page exports a standalone editable HTML copy; Reset text restores the sample introduction. Profile filters and responsibility dialogs demonstrate a possible team directory.
 
-The original logistics page is also preserved in archive/logistics.html.
+Roles and responsibilities are illustrative. Real names, photos and contact details are pending. No messages are sent and no backend is connected. Change the people array in index.html to update sample profiles. The original page is preserved in archive/logistics.html.
 
-The personal website has moved to the separate EM folder alongside this project.
+Validation: inline JavaScript syntax checked with Node. Browser visual and interaction verification is still pending.
+
+Navigation: Home, Who are we?, Shipping instructions. Shipping guidance is illustrative; tables, videos, approved statements, SQL, authentication and analytics are future discussion topics.
