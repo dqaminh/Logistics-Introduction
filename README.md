@@ -1,11 +1,9 @@
 # Logistics Introduction
 
-A responsive, presentation-ready draft for introducing the logistics team. Open index.html directly in a browser, or use the hosted Site recorded in .openai/hosting.json. dist/index.html is the deployment copy; copy index.html there after future source edits.
+Presentation draft with Home, Who are we?, and Shipping instructions sections. Open index.html directly; dist/index.html is the deployment copy and should be refreshed after source edits.
 
-Use **Edit introduction** to change the headline and introductory paragraph. Save keeps changes in this browser only. Download page exports a standalone editable HTML copy; Reset text restores the sample introduction. Profile filters and responsibility dialogs demonstrate a possible team directory.
+The reference-image red is #FF2301. The organization chart has Logistics Manager above Project Logistics Manager, Heavy Logistics Manager and Logistics Development Engineer. Names and contact details remain placeholders. Edit this HTML to update chart labels.
 
-Roles and responsibilities are illustrative. Real names, photos and contact details are pending. No messages are sent and no backend is connected. Change the people array in index.html to update sample profiles. The original page is preserved in archive/logistics.html.
+Edit introduction changes the headline and paragraph, with browser-local saving, reset, and standalone HTML download. Shipping guidance is illustrative; approved instructions, tables, statements and videos are pending. No database, authentication or analytics are included.
 
-Validation: inline JavaScript syntax checked with Node. Browser visual and interaction verification is still pending.
-
-Navigation: Home, Who are we?, Shipping instructions. Shipping guidance is illustrative; tables, videos, approved statements, SQL, authentication and analytics are future discussion topics.
+Validation: inline JavaScript syntax and chart structure checked. Browser visual verification pending. Site identity is preserved in .openai/hosting.json. Original page: archive/logistics.html.
